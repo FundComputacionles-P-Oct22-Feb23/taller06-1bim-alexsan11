@@ -1,0 +1,36 @@
+PROBLEMA 3
+
+// Realizar una miniespecificación que permita pedir por teclado
+// el nombre de 5 empleados.
+// Por cada empleado se debe solicitar el nombre, numero de días trabajados
+// y costo del día trabajo.
+// Presentar un reporte como el siguiente:
+
+               N.DIAS---COSTO DEL DIA----- VALOR A CANCELAR
+// Nombre 1     10           $2.5                $25 
+// Nombre 2     11           $2                  $22
+// Nombre 3     9            $3                  $27
+// Nombre 4     5            $4                  $20
+// Nombre 5     12           $2                  $24
+
+1.  Inicio
+
+2.  contador, i[0,n] <-- 1
+3.  nombres, x(200)[{1-9},{a-z},{A-Z}, {/}, {BS}]
+4.  resultadoFinal, x(200)[{1-9},{a-z},{A-Z}, {/}, {BS}] <-- ""
+5.  diasNumero, d[0,n]
+6.  costoDia, d[0,n]
+7.  valorCancelar, d[0,n]
+8.  Mientras contador <= 5 entonces
+9.       << "Ingrese el nombre del empleado"
+10.      >> nombres
+11.      << "Ingrese el número de días trabajados"
+12.      >> numeroDias
+13.      << "Ingrese el costo del día trabajado"
+14.      >> costoDia
+15.     valorCancelar <-- diasNumeros * costoDias 
+16.     resultadoFinal <-- cadenaFinal + nombres + "\t" + diasNumero + "\t$" + costoDia + "\t$" + valorCancelar "\n"
+17.     contador <-- contador + 1
+18.  Fin Mientras
+19.      << resultadoFinal
+20. fin

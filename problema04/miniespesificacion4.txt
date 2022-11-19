@@ -1,0 +1,51 @@
+// Realizar una miniespecificación que permita pedir por teclado
+// empleados
+// Por cada jugador se debe solicitar el nombre, posicio de juego de campo, edad y estatura
+// Presentar un reporte como el siguiente:
+// Listado de Jugadores
+// 1. Alexander Dominguez -Arquero-, edad 32, estatura 1.95
+// 2. Xavier Arreaga -Defensa-, edad 24, estatura 1.85
+// 3. Moisés Caicedo -Mediocentro-, edad 19, estatura 1.88
+// 4. Ángel Mena -Delantero-, edad 32, estatura 1.75
+// 5. Michael Estrada -Delantero-, edad 27, estatura 1.93
+// Promedio de edades:  26.8
+//  Promedio de estaturas: 1.87
+// El usuario decide cuando ya no se pida más información o datos
+
+1.  Inicio
+2.  contador, i[0-n]<--1
+3.  nombre, x(100)[{1-9},{a-z},{A-Z}, {/}, {BS}]
+4.  posicionCampo, x(50)[{1-9},{a-z},{A-Z}, {/}, {BS}]
+5.  edad, i[0-n] 
+6.  estatura, d[0-n]
+7.  edadesPromedio, d[0-n]
+8.  estaturaPromedio, d[0-n] 
+9. opcion, x(1)[{a,z}]<--P 
+10.  listasJugadores, x(200)[{1-9},{a-z},{A-Z}, {/}, {BS}] <-- ""
+11. sumaEdad, d[0-n]<--0 
+12. sumaEstaturas, d[0-n]<--0
+13.  bandera, l <--- true    
+14.    Mientras contador <= 5 entonces
+15.        SI bandera == True entoces 
+16.       << "Ingrese su nombre"
+17.       >> nommbre
+18.       << "Ingrese en que posicion juega"
+19.       >> posicionCampo
+20.       << "Ingrese su edad"
+21.       >> edad
+22.       << "Ingrese su Estatura"
+23.       >> estatura
+24.     listaJugadores <-- listaJugadores + "listado de Jugadores" + "\t" + nombre + "\t" + "-" + "," + posicionCampo + "-" + "edad" + edad + "," + "estatura" + estatura + "\n"
+25.        << "Si desea terminar el proceso porfavor ingrese P para finalizar"
+26.         >> opcion
+27.        SI opcion == "P" entoces
+28.           bandera <-- false
+29.          Fin si
+30.  sumaedad <-- sumaEdad + edad
+31.  sumaEstatura <-- sumaEstatura + estatura
+32.  contador <-- contador + 1
+33.     Fin mientras 
+34.  edadesPromedio <-- sumaEdad / 5
+35.  estaturaPromedio <-- sumaEatatura / 5 
+36.    << listaJugadores <-- listaJugadores + listaJugadores + "\t" + "Promedio de edades:" + edadesPromedio + "\t" + Promedio de estaturas:" + estaturaPromedio
+37.Fin     

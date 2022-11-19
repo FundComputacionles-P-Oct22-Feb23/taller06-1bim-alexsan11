@@ -1,0 +1,42 @@
+	PROBLEMA 2
+
+// Realizar una miniespecificación que permita presentar en pantalla
+// la siguiente secuencia:
+
+//      5/10
+//      10/12
+//      15/14
+//      20/16
+//      25/18
+//      30/20
+
+1.  Inicio
+
+2.  contador, i[0,n] <-- 5
+3.  Mientras contador <= 10 entonces
+4.      Si (contador MOD 2) == 5 entonces
+5.          << <-- contador + "/12\n"
+6.      De lo contrario
+7.          << <-- contador + "/10\n"
+8.      Fin Si
+9.      contador <-- contador + 5
+10.  Fin Mientras
+11.  contador, i[0,n] <-- 15
+12. Mientras contador <= 20 entoces
+13.     SI (contador MOD 2) == 10 entoces
+14.         << <-- contador + "/16\n"
+15.     De lo contrario 
+16.          << <-- contador + "/14\n"
+17.       Fin si
+18.         contador <-- contador + 5
+19.     Fin Mientras
+20.  contador, i[0,n] <-- 25
+21.  Mientras contador <= 30 entoces
+22.       SI (contador MOD 2) == 15 entoces
+23.           << <-- contador + "/20\n"
+24.         De lo contrario 
+25.           << <-- contador + "/18\n"
+26.         Fin si 
+27.      contador  <-- contador + 5
+28.   Fin Mientras
+29.  Fin
